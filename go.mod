@@ -141,3 +141,5 @@ require (
 )
 
 replace github.com/opencontainers/runtime-tools => github.com/opencontainers/runtime-tools v0.0.0-20221026201742-946c877fa809
+
+replace github.com/containerd/nri => /root/go/src/kangclzjc/nri

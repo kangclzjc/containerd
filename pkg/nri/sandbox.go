@@ -43,6 +43,7 @@ type LinuxPodSandbox interface {
 	GetCgroupParent() string
 	GetCgroupsPath() string
 	GetLinuxResources() *nri.LinuxResources
+	GetNetns() string
 }
 
 func commonPodSandboxToNRI(pod PodSandbox) *nri.PodSandbox {

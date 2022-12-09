@@ -576,6 +576,13 @@ func (p *criPodSandbox) GetPid() uint32 {
 	return p.pid
 }
 
+func (p *criPodSandbox) GetNetns() string {
+	if p.spec.Linux == nil {
+		return ""
+	}
+	return p.Sandbox.NetNSPath
+}
+
 //
 // NRI integration wrapper for CRI Containers
 //
